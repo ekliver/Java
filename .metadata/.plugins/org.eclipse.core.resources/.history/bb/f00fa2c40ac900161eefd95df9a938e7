@@ -1,0 +1,42 @@
+package beans;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
+import clases.Persona;
+
+@ManagedBean
+@RequestScoped
+public class personaBean {
+
+	private Persona persona=new Persona();
+	private List<Persona> lstPersona=new ArrayList();
+	
+	public personaBean(){
+		
+		
+	}
+	public Persona getPersona() {
+		return persona;
+	}
+	public void setPersona(Persona persona) {
+		this.persona = persona;
+	}
+	
+	public void agregarPersona(){
+		this.lstPersona.add(this.persona);
+		
+	}
+	public List<Persona> getLstPersona() {
+		return lstPersona;
+	}
+	public void setLstPersona(List<Persona> lstPersona) {
+		this.lstPersona = lstPersona;
+	}
+	
+	
+	
+}

@@ -1,0 +1,10 @@
+127.0.0.1 - - [21/Dec/2016:22:14:18 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [21/Dec/2016:22:14:19 -0500] "GET /JSFPrimerosPasos/faces/index.xhtml HTTP/1.1" 200 1273
+0:0:0:0:0:0:0:1 - - [21/Dec/2016:22:14:23 -0500] "POST /JSFPrimerosPasos/faces/index.xhtml HTTP/1.1" 500 4350
+0:0:0:0:0:0:0:1 - - [21/Dec/2016:22:15:55 -0500] "POST /JSFPrimerosPasos/faces/index.xhtml HTTP/1.1" 500 4350
+127.0.0.1 - - [21/Dec/2016:22:20:03 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [21/Dec/2016:22:20:08 -0500] "POST /JSFPrimerosPasos/faces/index.xhtml HTTP/1.1" 500 2157
+0:0:0:0:0:0:0:1 - - [21/Dec/2016:22:22:11 -0500] "POST /JSFPrimerosPasos/faces/index.xhtml HTTP/1.1" 500 2157
+0:0:0:0:0:0:0:1 - - [21/Dec/2016:22:25:07 -0500] "POST /JSFPrimerosPasos/faces/index.xhtml HTTP/1.1" 500 2157
+127.0.0.1 - - [21/Dec/2016:22:25:22 -0500] "GET / HTTP/1.1" 404 1002
+127.0.0.1 - - [21/Dec/2016:22:26:27 -0500] "GET / HTTP/1.1" 404 1002

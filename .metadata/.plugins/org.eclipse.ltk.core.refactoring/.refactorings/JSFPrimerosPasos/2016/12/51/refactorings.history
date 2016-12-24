@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JSFPrimerosPasos/WebContent/imdex.xhtml&apos; to &apos;index.xhtml&apos;" description="Rename resource &apos;imdex.xhtml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/imdex.xhtml" name="index.xhtml" stamp="1482375796184" updateReferences="true"/>
+</session>
