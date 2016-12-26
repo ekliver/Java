@@ -1,0 +1,138 @@
+GIT Es un sistema de control de versiones
+Proyecto (V1 -> V2 -> V3)
+ventajas:
+viajar en el tiempo
+organizacion
+commit
+1-modificar crear
+2- stagin area escogidos
+3- registrar o guardar
+
+
+#Configurar nombre y correo
+git config --global user.name "kliver"
+git config --global user.email "jekliver@gmail.com"
+
+#configurar colores
+git config --global color.ui true
+
+#ver mis configuraciones
+git config --global --list
+
+#Marcar el inicio del proyecto
+git init
+
+#Estado del proyecto
+git status
+
+#seleccionamos los archivos que tenemos listos
+git add index.html
+
+#seleccionamos todos los archivos como listos
+git add -A
+
+Guardar los archivos que hemos guardado
+git commit -m "mensaje"
+
+#registro de commits
+git log
+
+#viajar en el tiempo
+git checkout codigosha
+
+#mueve al ultimo
+git checkout master
+
+#viajar en el tiempo pero mata a commits y no toca nuestro working area(no se mete con nuestro codigo)
+git reset --soft codigosha
+
+git reset --mixet codigosha
+
+#viajar en el tiempo pero mata a commits y elimina todo (codigo y codigosha)
+git reset --hard codigosha
+
+#Generar un txt con todos los commits
+git log>commits.txt
+
+#brinda informacion del comando
+git help comando
+
+
+Head es el commit actual
+Rama es una linea de tiempo en nuestro proyecto, como la rama master que es la ram principal
+
+#Muestra la rama actual
+git branch
+
+#crear otra Test(se crea con todos los commits generados hasta el head)
+git branch Test
+
+#mover a otra rama
+git checkout Test
+
+#eliminar una rama
+git branch -D nombrerama
+
+Fusion es la creacion de un commit uniendo dos ramas
+
+#Unir rama Test a rama principal(se tiene que estar en la rama que va a absorver)
+get merge Test
+
+#crear y mover a la rama Text al mismo tiempo
+git checkout -b Text
+
+Github No son lo mismo ya que este es una plataforma donde podemos guardar nuestros archivos y git es quien lo administra
+Se caracteriza por tener proyectos opensource y todo sea publico
+
+#clonar un proyecto
+git clone https://github.com/ekliver/Java.git
+
+tenemos dos tipos de repositorios los locales(en pc) y los remotos(github)
+
+#vincular nuestro proyecto local con nuestro proyecto remoto
+git remote add origin https://github.com/ekliver/Java.git
+
+#comprobar lo que acabamos de copiar
+git remote -v
+
+# eliminar la conexion
+git remote remove origin
+
+#subir a github
+git push origin master
+
+#subir a github rama test
+git push origin Test
+
+Issues son una forma de continuar mejorar o solucionar un error en nuestros prrepositorios
+Milestones Son grupos de issues que se aplican para un proyecto, caracteristica o periodo de tiempo
+Label diferentes etiquetas para organizr issues
+
+Tag(etiquetas) son puntos especificos para marcar una version
+
+#modificar un mensaje de commit
+git commit --amend -m "Version 3"
+
+#Tag anotadas contienen mayor informacion
+git tag -a v0.8 -m "version 0.8 de nuestro proyecto"
+
+git tag -a v0.1 -m "version 0.1 de nuestro proyecto" codigosha
+
+#subir un tag
+git push origin v0.8
+
+#subir todas las tags
+git push origin --tags
+
+
+
+#Tag ligeras contienen menor informacion
+git tag -a v0.1
+
+
+
+
+
+
+
+
