@@ -43,3 +43,16 @@
 0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:10:35 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 200 3912
 0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:10:36 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 200 3729
 0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:10:37 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 200 3982
+127.0.0.1 - - [27/Dec/2016:22:27:42 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:27:47 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 500 2157
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:27:50 -0500] "GET /DataTable/faces/index.xhtml HTTP/1.1" 200 2055
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:27:57 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 200 2411
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:28:04 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 500 2741
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:28:11 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 500 2741
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:28:14 -0500] "GET /DataTable/faces/index.xhtml HTTP/1.1" 200 2055
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:28:45 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 200 2988
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:28:51 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 200 3099
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:22:28:56 -0500] "POST /DataTable/faces/index.xhtml HTTP/1.1" 500 2737
+127.0.0.1 - - [27/Dec/2016:23:06:52 -0500] "GET / HTTP/1.1" 404 1002
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:23:06:53 -0500] "GET /JSFHibernate/error.xhtml HTTP/1.1" 200 365
+0:0:0:0:0:0:0:1 - - [27/Dec/2016:23:07:40 -0500] "GET /JSFPrimerosPasos/faces/index.xhtml HTTP/1.1" 200 1273
