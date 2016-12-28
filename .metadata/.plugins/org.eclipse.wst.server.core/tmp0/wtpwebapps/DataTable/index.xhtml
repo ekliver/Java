@@ -5,23 +5,31 @@
 
 <h:head></h:head> 
 <h:form>
-<h:panelGrid columns="2">
-<h:outputLabel value="Nombres" />
-<h:inputText value="#{personaBean.persona.nombre}" />
+<h:messages />
 
-<h:outputLabel value="Apellido" />
-<h:inputText value="#{personaBean.persona.apellido}" />
+<h:panelGrid columns="3">
+<h:outputLabel value="Nombres" />
+<h:inputText id="txtNombre" value="#{personaBean.persona.nombre}" required="true" label="Nombre requerido" />
+<h:messages for="txtNombre" style="color:red"/>
+
+<h:outputLabel value="Edad" />
+<h:inputText id="txtEdad" value="#{personaBean.persona.edad}" label="(1-18)">
+<!--<f:validateLongRange for="txtEdad" minimum="1" maximum="18" ></f:validateLongRange> -->
+<f:validator validatorId="MayorEdadValidator"/>
+</h:inputText>
+<h:messages for="txtEdad" style="color:red"/>
 
 <h:outputLabel value="sexo" />
-<h:selectOneMenu value="#{personaBean.persona.sexo}">
-<f:selectItem itemValue="M" itemLabel="Masculino"/>
+<h:inputText id="txtSexo" value="#{personaBean.persona.sexo}" validator="#{personaBean.validar}"/>
+<h:messages for="txtSexo"  style="color:red"/>
+<!-- <f:selectItem itemValue="M" itemLabel="Masculino"/>
 <f:selectItem itemValue="F" itemLabel="Femenino"/>
 </h:selectOneMenu>
-
+-->
 </h:panelGrid>
 
 <h:commandButton  value="Registrar" actionListener="#{personaBean.registrar()}" />
-<h:commandButton  value="Registrar SIN VALIDACIONES" actionListener="#{personaBean.registrar()}" />
+<h:commandButton  value="Registrar SIN VALIDACIONES" actionListener="#{personaBean.registrar()}" immediate="true" />
 
 <h:dataTable value="#{personaBean.lstPersona}" var="per" rendered="#{personaBean.lstPersona.size()>0 eq true}">
 
@@ -36,9 +44,9 @@
 
 <h:column>
 <f:facet name="header">
-<h:outputLabel value="Apellidos" />
+<h:outputLabel value="Edad" />
 </f:facet>
-<h:outputLabel value="#{per.apellido}" />
+<h:outputLabel value="#{per.edad}" />
 </h:column>
 
 

@@ -75,7 +75,7 @@ git branch -D nombrerama
 
 Fusion es la creacion de un commit uniendo dos ramas
 
-#Unir rama Test a rama principal(se tiene que estar en la rama que va a absorver)
+#Unir o fusionar rama Test a rama principal(se tiene que estar en la rama que va a absorver)
 get merge Test
 
 #crear y mover a la rama Text al mismo tiempo
@@ -129,9 +129,18 @@ git push origin --tags
 #Tag ligeras contienen menor informacion
 git tag -a v0.1
 
+#Ver ramas ocultas(origin/master)
+git branch -a
 
+#bajar cambios remotos a nuestro proyecto local a la rama origin/master
+git feth origin
 
+#fusionar rama oculta con rama master
+git merge origin/master
 
+Manual Merge arreglar los conflictos manualmente
+
+Fork crea una copia del repositorio en nuestra cuenta github creando una nueva rama oculta upstream/master
 
 
 

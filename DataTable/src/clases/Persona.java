@@ -3,7 +3,7 @@ package clases;
 public class Persona {
 
 	private String nombre;
-	private String apellido;
+	private String edad;
 	private String sexo;
 	public String getNombre() {
 		return nombre;
@@ -11,12 +11,15 @@ public class Persona {
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
-	public String getApellido() {
-		return apellido;
+
+	
+	public String getEdad() {
+		return edad;
 	}
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
+	public void setEdad(String edad) {
+		this.edad = edad;
 	}
+	
 	public String getSexo() {
 		return sexo;
 	}

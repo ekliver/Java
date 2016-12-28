@@ -3,9 +3,11 @@ package beans;
 import java.util.ArrayList;
 import java.util.List;
 
+import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.RequestScoped;
 import javax.faces.component.UIComponent;
+import javax.faces.component.UIInput;
 import javax.faces.context.FacesContext;
 
 import clases.Persona;
@@ -15,7 +17,7 @@ import clases.Persona;
 public class personaBean {
 
 	private Persona persona=new Persona();
-	private static List<Persona> lstPersona=new ArrayList();
+	private static List<Persona> lstPersona=new ArrayList<Persona>();
 	
 	public personaBean(){
 		
@@ -39,8 +41,16 @@ public class personaBean {
 		personaBean.lstPersona = lstPersona;
 	}
 	
-	public void validar(FacesContext context, UIComponent toValidate, Object value){
+	public void validar(FacesContext context,
+			UIComponent toValidate,	Object value){
 		
+		context=FacesContext.getCurrentInstance();
+		String texto=(String)value;
+		if (!texto.equalsIgnoreCase("M")&& !texto.equalsIgnoreCase("F")) {
+			((UIInput)toValidate).setValid(false);
+			context.addMessage(toValidate.getClientId(), new FacesMessage("Sexo NO VALIDO"));
+			
+		}
 		
 	}
 	
